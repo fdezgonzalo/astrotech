@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstroTech</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logo.svg" sizes="any" type="image/svg+xml">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="container-fluid navbar navbar-expand-lg menu">
+        <div class="container-fluid">
+            <a class="navbar-brand titulo" href="#"><img src="img/logo.svg" alt="Logo" id="logo-tienda"
+                    class="me-3">AstroTech</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#productos">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#innovacion">Innovación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container-fluid">
+        <div class="text-center">
+            <h1 class="mb-3">Tecnología de otro planeta</h1>
+            <a href="#productos"><button type="button" class="btn col-12 col-md-6 mb-2 col-lg-2 me-lg-1">Ver
+                    productos</button></a>
+            <a href="#contacto"><button type="button" class="btn col-12 col-md-6 mb-2 col-lg-2 ms-lg-1">Contáctanos</button></a>
+
+
+        </div>
+    </header>
+
+    <div class="container-fluid text-center" id="productos">
+        <div class="row articulos">
+            <article class="col-lg-4 py-5">
+                <div class="row justify-content-center">
+                    <h2>Galaxy Z Fold</h2>
+                    <span>Nuestro foldable más resistente hasta el momento</span>
+                    <img class="img-articulo" src="img/producto-1.png" alt="Galaxy Z Fold">
+                    <button type="button" class="btn col-4 mt-4" data-bs-toggle="modal"
+                        data-bs-target="#modal-samsung">Ficha técnica</button>
+                </div>
+            </article>
+            <article class="col-lg-4 py-5">
+                <div class="row justify-content-center">
+                    <h2>iPhone 15</h2>
+                    <span>Nueva cámara, nuevo diseño, emocionante</span>
+                    <img class="img-articulo" src="img/producto-2.png" alt="iPhone 15">
+                    <button type="button" class="btn col-4 mt-4" data-bs-toggle="modal"
+                        data-bs-target="#modal-iphone">Ficha técnica</button>
+                </div>
+            </article>
+            <article class="col-lg-4 py-5">
+                <div class="row justify-content-center">
+                    <h2>Huawei P50 Pro</h2>
+                    <span>La excelencia supera las expectativas</span>
+                    <img class="img-articulo" src="img/producto-3.png" alt="Huawei P50 Pro">
+                    <button type="button" class="btn col-4 mt-4" data-bs-toggle="modal"
+                        data-bs-target="#modal-huawei">Ficha técnica</button>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-samsung" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">Samsung Galaxy Z Fold</h1>
+                    <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body row">
+                    <span><b>Procesador:</b> Qualcomm Snapdragon 8+ Gen 1</span>
+                    <span><b>Memoria:</b> 12 GB</span>
+                    <span><b>Almacenamiento:</b> 256/ 512/1024 GB</span>
+                    <span><b>Cámara frontal:</b> 10 MP</span>
+                    <span><b>Cámara trasera:</b> 50 MP</span>
+                    <span><b>SO:</b> Android 12L</span>
+                    <span><b>Batería:</b> 4400 mAh</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-iphone" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">iPhone 15</h1>
+                    <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body row">
+                    <span><b>Procesador:</b> Apple A16 Bionic</span>
+                    <span><b>Memoria:</b> 6 GB</span>
+                    <span><b>Almacenamiento:</b> 128/256/512 GB</span>
+                    <span><b>Cámara frontal:</b> 12 MP</span>
+                    <span><b>Cámara trasera:</b> 48 MP</span>
+                    <span><b>SO:</b> iOS 17</span>
+                    <span><b>Batería:</b> 3349 mAh</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-huawei" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">Huawei P50 Pro</h1>
+                    <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body row">
+                    <span><b>Procesador:</b> Procesador Snapdragon 888 4G</span>
+                    <span><b>Memoria:</b> 8/12 GB</span>
+                    <span><b>Almacenamiento:</b> 128/256/512 GB</span>
+                    <span><b>Cámara frontal:</b> 13 MP</span>
+                    <span><b>Cámara trasera:</b> 50 MP</span>
+                    <span><b>SO:</b> Android 11</span>
+                    <span><b>Batería:</b> 4360 mAh</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="innovacion">
+        <div class="row innovacion align-items-center pt-4">
+            <div class="col-sm-12 col-lg-4">
+                <h1>Innovación</h1>
+                <h4>Antes que nadie, siempre</h4>
+                <span>Nos adelantamos a las tendencias, por eso nuestros productos son los primeros en llegar al
+                    mercado</span>
+                <h4 class="pt-3">Variedad, de verdad</h4>
+                <span>Contamos con una amplia gama de productos, para que siempre encuentres lo que buscas</span>
+            </div>
+            <div class="col-sm-12 col-lg-8">
+                <img src="img/innovacion.jpeg" alt="Imagen Huawei P50" style="width: 100%;">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="contacto">
+        <div class="row nosotros py-5">
+            <div class="col-sm-12 col-xl-4">
+                <h1>Unite a nosotros</h1>
+                <span>Recibí novedades, promociones y descuentos exclusivos para miembros de Astro Tech</span>
+            </div>
+            <div class="col-sm-12 col-xl-8">
+                <h2 class="mt-4 mt-xl-0">Comunicate</h2>
+                <form>
+                    <input type="text" placeholder="Nombre" class="col-12 col-lg-4 my-1" required>
+                    <input type="email" placeholder="Correo elctrónico" class="col-12 col-lg-4 my-1" required>
+                    <button type="submit" class="btn col-12 col-lg-3 p-2 my-1">Ser parte</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid">
+        <div class="row py-4 align-items-center">
+            <div class="col-sm-12 col-lg-4 text-center text-lg-start pb-3 pb-lg-0">
+                <img src="img/logo.svg" alt="Logo" id="logo-tienda">
+            </div>
+            <div class="col-sm-12 col-lg-8 text-center text-lg-end">
+                <span>Astro Tech - Tienda de tecnología. Todos los derechos reservados.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

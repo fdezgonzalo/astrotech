@@ -1,0 +1,112 @@
+:root {
+    --color-principal: #ed9275;
+    --color-oscuro: #935a49;
+    --fondo-oscuro: #030301;
+    --fondo-medio: #0b1017;
+    --fondo-claro: #131c29;
+}
+
+* {
+    color: white;
+    font-family: "Poppins";
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 600 !important;
+}
+
+h4 {
+    color: var(--color-principal) !important;
+}
+
+#logo-tienda {
+    width: 35px;
+}
+
+.img-articulo {
+    max-height: 400px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.articulos article:nth-child(1) {
+    background-color: var(--fondo-oscuro);
+}
+
+.articulos article:nth-child(2) {
+    background-color: var(--fondo-medio);
+}
+
+.articulos article:nth-child(3) {
+    background-color: var(--fondo-claro);
+}
+
+.btn {
+    background-color: var(--color-principal) !important;
+    color: white !important;
+    transition: transform 0.3s !important;
+    font-size: small !important;
+}
+
+.btn:hover {
+    transform: scale(1.05) !important;
+    background-color: var(--color-oscuro) !important;
+}
+
+.innovacion {
+    background-color: var(--fondo-oscuro);
+}
+
+.nosotros {
+    background-color: var(--fondo-claro);
+}
+
+form input {
+    border: solid 2px var(--color-principal);
+    background-color: #03030100;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.menu {
+    background-color: var(--fondo-oscuro);
+}
+
+.nav-link {
+    color: white !important;
+}
+
+header {
+    height: 100vh;
+    background-image: url("../img/computadora.jpg");
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+header div {
+    margin-bottom: 15vh;
+}
+
+footer {
+    background-color: var(--fondo-medio);
+}
+
+.titulo {
+    color: white !important;
+}
+
+.modal-header {
+    background-color: var(--fondo-claro);
+}
+
+.modal-body span, .modal-body b{
+    color: var(--fondo-medio);
+}
+
